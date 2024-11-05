@@ -1,5 +1,3 @@
-using System;
-using System.Collections.Generic;
 using System.Reflection;
 using BepInEx;
 using BepInEx.Configuration;
@@ -31,7 +29,7 @@ namespace HPMult
 		public float CorruptRaptor;
 		public float CorruptWanderer;
 	}
-	[BepInPlugin("tairasoul.hpmult", "HPMult", "1.0.0")]
+	[BepInPlugin("tairasoul.hpmult", "HPMult", "1.0.1")]
 	class Plugin : BaseUnityPlugin 
 	{
 		internal static Multipliers mults;
@@ -42,8 +40,8 @@ namespace HPMult
 			Log = Logger;
 			ConfigEntry<float> centi = Config.Bind("Multipliers", "CorruptCenti", 1f);
 			ConfigEntry<float> drone = Config.Bind("Multipliers", "CorruptDrone", 1f);
-			ConfigEntry<float> executor = Config.Bind("Multipliers", "CorruptFairyMan", 1f);
-			ConfigEntry<float> fairy = Config.Bind("Multipliers", "CorruptExecutor", 1f);
+			ConfigEntry<float> fairy = Config.Bind("Multipliers", "CorruptFairyMan", 1f);
+			ConfigEntry<float> executor = Config.Bind("Multipliers", "CorruptExecutor", 1f);
 			ConfigEntry<float> frame = Config.Bind("Multipliers", "CorruptFrame", 1f);
 			ConfigEntry<float> grappler = Config.Bind("Multipliers", "CorruptFrameGrappler", 1f);
 			ConfigEntry<float> mono = Config.Bind("Multipliers", "CorruptMono", 1f);
